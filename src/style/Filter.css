@@ -1,0 +1,67 @@
+.filter-container {
+    margin-top: 15px; /* Reduced margin */
+    padding: 15px; /* Reduced padding */
+    background-color: #f9f9f9; /* Light background color */
+    border: 1px solid #ddd; /* Border around the filter container */
+    border-radius: 6px; /* Slightly reduced rounded corners */
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  }
+  
+  .filter-title {
+    font-size: 20px; /* Reduced title font size */
+    margin-bottom: 15px; /* Reduced spacing below title */
+    color: #333; /* Title color */
+  }
+  
+  .filter-group {
+    margin-bottom: 15px; /* Reduced spacing between filter groups */
+  }
+  
+  .filter-group h3 {
+    font-size: 16px; /* Smaller font size for filter group titles */
+    margin-bottom: 5px; /* Reduced margin below group titles */
+    color: #555; /* Lighter color for group titles */
+  }
+  
+  .filter-group select,
+  .filter-rating-input {
+    width: 100%; /* Full width for inputs */
+    padding: 8px; /* Reduced padding */
+    margin-top: 5px; /* Spacing above inputs */
+    border: 1px solid #ccc; /* Border for inputs */
+    border-radius: 4px; /* Rounded corners */
+    font-size: 14px; /* Reduced font size */
+    transition: border-color 0.3s; /* Smooth transition on focus */
+  }
+  
+  .filter-rating-input {
+    width: 48%; /* Slightly less than half to fit side by side */
+  }
+  
+  .filter-group select:focus,
+  .filter-rating-input:focus {
+    border-color: #007bff; /* Blue border on focus */
+    outline: none; /* Remove default outline */
+  }
+  
+  .rating-range {
+    display: flex; /* Flexbox for rating inputs */
+    justify-content: space-between; /* Space between inputs */
+  }
+  
+  .btn-apply {
+    background-color: #007bff; /* Primary button color */
+    color: white; /* Text color */
+    border: none; /* No border */
+    border-radius: 4px; /* Rounded corners */
+    padding: 10px; /* Button padding */
+    cursor: pointer; /* Pointer cursor */
+    transition: background-color 0.3s ease-in-out; /* Smooth hover effect */
+    width: 100%; /* Full width button */
+    font-size: 14px; /* Button font size */
+  }
+  
+  .btn-apply:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+  }
+  

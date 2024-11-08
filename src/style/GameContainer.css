@@ -1,0 +1,45 @@
+.game-card-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 cards per row */
+  gap: 20px; /* Space between cards */
+  margin-top: 20px; /* Space above the grid */
+  padding-bottom: 60px; /* Add padding to avoid overlap with pagination */
+}
+
+.pagination-controls {
+  display: flex;
+  justify-content: center; /* Center the buttons horizontally */
+  margin: 20px 0; /* Space above and below the buttons */
+  grid-column: span 3; /* Make the controls span across all columns */
+}
+
+.pagination-controls button {
+  padding: 10px 15px; /* Increase padding for better touch area */
+  margin: 0 10px; /* Space between buttons */
+  border: none; /* Remove default border */
+  border-radius: 5px; /* Rounded corners */
+  background-color: #007bff; /* Primary color */
+  color: white; /* Text color */
+  font-size: 16px; /* Increase font size for better readability */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s, transform 0.2s; /* Smooth transitions */
+}
+
+.pagination-controls button:hover {
+  background-color: #0056b3; /* Darker shade on hover */
+  transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+.pagination-controls button:disabled {
+  background-color: #ccc; /* Gray out disabled buttons */
+  cursor: not-allowed; /* Not-allowed cursor */
+}
+
+/* Style for the "Game not found" message */
+.no-games {
+  grid-column: span 3; /* Make the message span across all columns */
+  text-align: center;
+  color: #ff4500; /* Customize color */
+  padding: 20px;
+  font-size: 18px;
+}
